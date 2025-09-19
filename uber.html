@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uber India | Ride or Drive with Uber</title>
+    <link rel="icon" type="image/x-icon" href="https://www.uber.com/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.6) 100%);
+        }
+        .nav-link:hover {
+            color: #00aa5e;
+        }
+        .btn-primary {
+            background-color: #000000;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #00aa5e;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md py-4 px-6 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-8">
+                <a href="#" class="text-2xl font-bold text-black">Uber</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#" class="nav-link text-gray-700 hover:text-green-600">Ride</a>
+                    <a href="#" class="nav-link text-gray-700 hover:text-green-600">Drive</a>
+                    <a href="#" class="nav-link text-gray-700 hover:text-green-600">Business</a>
+                    <a href="#" class="nav-link text-gray-700 hover:text-green-600">Uber Eats</a>
+                </div>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="hidden md:block nav-link text-gray-700 hover:text-green-600">Help</a>
+                <a href="#" class="hidden md:block nav-link text-gray-700 hover:text-green-600">Log in</a>
+                <button class="btn-primary text-white px-4 py-2 rounded-md">Sign up</button>
+                <button class="md:hidden">
+                    <i data-feather="menu"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 md:py-32 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Get in the driver's seat and get paid</h1>
+                <p class="text-xl mb-8">Drive on the platform with the largest network of active riders.</p>
+                <button class="btn-primary text-white px-8 py-3 rounded-md text-lg mb-4">Sign up to drive</button>
+                <p class="text-sm">Learn more about driving and delivering</p>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="http://static.photos/technology/1024x576/10" alt="Uber Driver" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Why choose Uber?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="100">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="clock" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Reliable rides</h3>
+                    <p class="text-gray-600">No matter where you're going, find the perfect ride from our wide range of options.</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="200">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="dollar-sign" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Transparent pricing</h3>
+                    <p class="text-gray-600">See how much your ride will cost before you request it. No surprises.</p>
+                </div>
+                <div class="feature-card bg-white p-8 rounded-lg shadow-md transition-all duration-300" data-aos="fade-up" data-aos-delay="300">
+                    <div class="w-12 h-12 bg-green-100 rounded-full flex items-center justify-center mb-4">
+                        <i data-feather="shield" class="text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3">Safety first</h3>
+                    <p class="text-gray-600">From door-to-door safety features to 24/7 support, we're committed to your safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ride Options -->
+    <section class="py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Ways to ride</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="http://static.photos/cityscape/320x240/1" alt="UberX" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">UberX</h3>
+                        <p class="text-gray-600 mb-4">Affordable, everyday rides</p>
+                        <button class="text-green-600 font-medium">Learn more</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="http://static.photos/technology/320x240/2" alt="Uber Comfort" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Uber Comfort</h3>
+                        <p class="text-gray-600 mb-4">Newer cars with extra legroom</p>
+                        <button class="text-green-600 font-medium">Learn more</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <img src="http://static.photos/black/320x240/3" alt="Uber Black" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Uber Black</h3>
+                        <p class="text-gray-600 mb-4">Premium rides in luxury cars</p>
+                        <button class="text-green-600 font-medium">Learn more</button>
+                    </div>
+                </div>
+                <div class="bg-white rounded-lg overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="400">
+                    <img src="http://static.photos/people/320x240/4" alt="Uber Auto" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold mb-2">Uber Auto</h3>
+                        <p class="text-gray-600 mb-4">Affordable auto rickshaw rides</p>
+                        <button class="text-green-600 font-medium">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- App Download -->
+    <section class="py-16 bg-black text-white">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h2 class="text-3xl font-bold mb-6">Download the Uber app</h2>
+                <p class="text-xl mb-8">Get a ride in minutes. Or become a driver and earn money on your schedule.</p>
+                <div class="flex flex-wrap gap-4">
+                    <button class="bg-gray-800 px-6 py-3 rounded-md flex items-center">
+                        <i data-feather="smartphone" class="mr-2"></i>
+                        <span>Download for iPhone</span>
+                    </button>
+                    <button class="bg-gray-800 px-6 py-3 rounded-md flex items-center">
+                        <i data-feather="smartphone" class="mr-2"></i>
+                        <span>Download for Android</span>
+                    </button>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center" data-aos="fade-left">
+                <img src="http://static.photos/technology/640x360/5" alt="Uber App" class="max-w-xs md:max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-100 py-12">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Company</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">About us</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Our offerings</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Newsroom</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Investors</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Products</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Ride</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Drive</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Deliver</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Eat</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Global citizenship</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Safety</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Diversity and Inclusion</a></li>
+                        <li><a href="#" class="text-gray-600 hover:text-green-600">Sustainability</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Connect with us</h3>
+                    <div class="flex space-x-4 mb-4">
+                        <a href="#" class="text-gray-600 hover:text-green-600"><i data-feather="facebook"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-green-600"><i data-feather="twitter"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-green-600"><i data-feather="instagram"></i></a>
+                        <a href="#" class="text-gray-600 hover:text-green-600"><i data-feather="linkedin"></i></a>
+                    </div>
+                    <div class="space-y-2">
+                        <a href="#" class="text-gray-600 hover:text-green-600">Help</a>
+                        <a href="#" class="text-gray-600 hover:text-green-600">Cities</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-200 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <div class="text-gray-500 mb-4 md:mb-0">© 2023 Uber Technologies Inc.</div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-600 hover:text-green-600">Privacy</a>
+                    <a href="#" class="text-gray-600 hover:text-green-600">Accessibility</a>
+                    <a href="#" class="text-gray-600 hover:text-green-600">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>AOS.init();</script>
+    <script>feather.replace();</script>
+</body>
+</html>
